@@ -1,0 +1,116 @@
+/* Centering the page */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #cce5ff, #e0ccff, #ffd6e0);
+  font-family: Arial, sans-serif;
+}
+
+/* Card Styling */
+.todo-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input + Button */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.add-btn {
+  padding: 10px 15px;
+  background: #3399ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #1d7be0;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+/* When task is done */
+.done-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.done-btn {
+  background: #2ecc71;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.done-btn:hover {
+  background: #27ae60;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
