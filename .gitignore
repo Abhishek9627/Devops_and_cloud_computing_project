@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Coverage
+coverage/
+*.lcov
+
+# Runtime data
+*.sqlite
+*.db
+
+# Docker
+docker-compose.override.yml
+
+# Frontend (React/Vite/Next.js etc.)
+.vite/
+.next/
+out/
+.cache/
+*.tsbuildinfo
+
+# Backend specific
+/uploads/
