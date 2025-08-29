@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -8,14 +9,14 @@ app.use(cors({
   origin:process.env.CORS_ORIGIN
 }));
 app.use(express.json());
-
+console.log("Mongo URI:", process.env.MONGO_URI);
 // MongoDB connection
-mongoose.connect("mongodb://localhost:27017/todosdb", {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
 .then(() => console.log("✅ MongoDB Connected"))
-.catch(err => console.error(err));
+.catch(err => console.error("MongoDB connection error:", err));
 
 // Schema + Model
 const TodoSchema = new mongoose.Schema({
@@ -42,3 +43,4 @@ app.delete("/api/todos/:id", async (req, res) => {
 
 // Start server
 app.listen(5000, () => console.log("🚀 Backend running on port 5000"));
+
